@@ -39,6 +39,11 @@
 10.768740, 106.689668 - Nguyen Trai - Ton That Tung
 10.770455, 106.692012 - Nguyen Trai - Nguyen Van Trang
 10.771319, 106.693223 - Vong xoay Nguyen Trai - Ly Tu Trong (nga sau Phu Dong)
+10.767429, 106.688512 - Nguyen Trai - Nam Quoc Cang
+10.768222, 106.689258 - Nguyen Trai - Le Lai
+
+10.768425, 106.689921 - Le Lai - Ton That Tung
+10.770157, 106.694171 - Le Lai - Nguyen Thi Nghia
 
 10.762918, 106.687695 - Nguyen Cu Trinh - Tran Dinh Xu
 
