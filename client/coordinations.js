@@ -7,7 +7,7 @@ var coordinates = [
 
     { lat: 10.771538,  lng: 106.698437 }, // - Vong xoay Tran Hung Dao - cho Ben Thanh
     { lat: 10.766880,  lng: 106.694294 }, // - Tran Hung Dao - De Tham
-    { lat: 10.766880,  lng: 106.694294 }, // - Tran Hung Dao - De Tham
+    { lat: 10.768048, lng:  106.695402 }, // - Tran Hung Dao - Nguyen Thai Hoc
     { lat: 10.764810,  lng: 106.692474 }, // - Tran Hung Dao - Nguyen Cu Trinh
     { lat: 10.762918,  lng: 106.687695 }, // - Tran Hung Dao - Cong Quynh
     { lat: 10.761673,  lng: 106.689730 }, // - Tran Hung Dao - Tran Dinh Xu

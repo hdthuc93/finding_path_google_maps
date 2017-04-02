@@ -46,6 +46,22 @@ var path = [
     [
         { lat: 10.758249,  lng: 106.680756 }, // - Nguyen Trai - Tran Binh Trong
         { lat: 10.755400,  lng: 106.681411 }, // - Tran Hung Dao - Tran Binh Trong
+    ],
+    [
+        { lat: 10.756456,  lng: 106.685256 }, // - Tran Hung Dao - Nguyen Van Cu
+        { lat: 10.771538,  lng: 106.698437 }, // - Vong xoay Tran Hung Dao - cho Ben Thanh
+    ],
+    [
+        
+    ],
+    [
+        
+    ],
+    [
+        
+    ],
+    [
+        
     ]
 
 ];
