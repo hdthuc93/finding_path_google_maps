@@ -3,21 +3,31 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <title>Simple Polylines</title>
+    <title>Calculator</title>
   </head>
-  <body style="padding-left: 300px;">
-    <br/><br/>
-    A Point: 
-    <input type="text" id="latLngA" style="width: 150px;height: 25px;"/><br/><br/>
-
-    B Point: 
-    <input type="text" id="latLngB" style="width: 150px;height: 25px;"/><br/><br/>
-
-    <button id="calc">Calculator</button><br/><br/>
-
+  <body >
     <div>
-        Result (Meter): <p id="result" style="color: red"></p>
+        <div style="width: 50%; display: inline-block;">
+            <br/><br/>
+            A Point: 
+            <input type="text" id="latLngA" style="width: 150px;height: 25px;"/><br/><br/>
+
+            B Point: 
+            <input type="text" id="latLngB" style="width: 150px;height: 25px;"/><br/><br/>
+
+            <button id="calc">Calculator</button><br/><br/>
+
+            <div>
+                Result (Meter): <p id="result" style="color: red"></p>
+            </div>
+        </div>
+
+        <div style="width: 50%; float: right" id="coordinate">
+            
+        </div>
     </div>
+
+    <script src="coordinations_2.js"></script>
     <script>
         function init() {
             var a_point = document.getElementById("latLngA");
@@ -36,6 +46,15 @@
                         new google.maps.LatLng(latB, lngB)
                     );
             });
+
+
+
+            // show list coordinate
+            var coordinate = document.getElementById("coordinate");
+            for(var item = 0; item < coordinates_2.length; ++item) {
+                var str = '<p>' + coordinates_2[item].lat + ', ' + coordinates_2[item].lng + '  --- ' + coordinates_2[item].name +'</p>';
+                coordinate.insertAdjacentHTML('beforeend', str);
+            }
         }
     </script>
     <script async defer
