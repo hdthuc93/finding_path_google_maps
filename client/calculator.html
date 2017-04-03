@@ -47,12 +47,21 @@
                     );
             });
 
-
-
             // show list coordinate
             var coordinate = document.getElementById("coordinate");
+            var firstStrName = "";
             for(var item = 0; item < coordinates_2.length; ++item) {
-                var str = '<p>' + coordinates_2[item].lat + ', ' + coordinates_2[item].lng + '  --- ' + coordinates_2[item].name +'</p>';
+                var str = "";
+                var strName = coordinates_2[item].name.split(" - ");
+
+                if(strName[0] != firstStrName)
+                    str = '<br />';
+                
+                coordinate.insertAdjacentHTML('beforeend', str);
+                
+                str = '<p>' + coordinates_2[item].lat + ', ' + coordinates_2[item].lng + '  --- ' + coordinates_2[item].name +'</p>';
+                firstStrName = strName[0];
+
                 coordinate.insertAdjacentHTML('beforeend', str);
             }
         }
