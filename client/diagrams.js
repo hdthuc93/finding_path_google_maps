@@ -27,7 +27,7 @@ function initMap() {
             map: map,
         });
     }
-    
+    console.log(google.maps.geometry.spherical.computeDistanceBetween(new google.maps.LatLng(10.765889, 106.645567), new google.maps.LatLng(10.763332, 106.682474)));
      //end addListener
 
     // flightPath.setMap(map);

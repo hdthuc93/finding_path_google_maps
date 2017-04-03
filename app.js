@@ -13,6 +13,10 @@ router.get('/diagrams', (req, res) => {
     res.sendFile(__dirname + '/client/diagrams.html');
 });
 
+router.get('/calc', (req, res) => {
+    res.sendFile(__dirname + '/client/calculator.html');
+});
+
 app.use(router);
 /* Server listen */
 const server = app.listen("3000", () => {

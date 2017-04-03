@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Simple Polylines</title>
+  </head>
+  <body style="padding-left: 300px;">
+    <br/><br/>
+    A Point: 
+    <input type="text" id="latLngA" style="width: 150px;height: 25px;"/><br/><br/>
+
+    B Point: 
+    <input type="text" id="latLngB" style="width: 150px;height: 25px;"/><br/><br/>
+
+    <button id="calc">Calculator</button><br/><br/>
+
+    <div>
+        Result (Meter): <p id="result" style="color: red"></p>
+    </div>
+    <script>
+        function init() {
+            var a_point = document.getElementById("latLngA");
+            var b_point = document.getElementById("latLngB");
+            var calc = document.getElementById("calc");
+            var result = document.getElementById("result");
+
+            calc.addEventListener("click", function() {
+                var latA = Number(a_point.value.split(", ")[0]);
+                var lngA = Number(a_point.value.split(", ")[1]);
+                var latB = Number(b_point.value.split(", ")[0]);
+                var lngB = Number(b_point.value.split(", ")[1]);
+
+                result.innerHTML = google.maps.geometry.spherical.computeDistanceBetween(
+                        new google.maps.LatLng(latA, lngA), 
+                        new google.maps.LatLng(latB, lngB)
+                    );
+            });
+        }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCM0P36UmPLXXbSjRgGL3rAeJSCdfH_JA&libraries=geometry&callback=init">
+    </script>
+  </body>
+</html>

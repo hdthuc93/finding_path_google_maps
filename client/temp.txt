@@ -1,0 +1,97 @@
+
+
+
+
+10.763332, 106.682474 // - KHTN
+
+10.761139, 106.683378 // - Nguyen Van Cu - An Duong Vuong
+10.759484, 106.684000 // - Nguyen Van Cu - Nguyen Trai
+10.765408, 106.681661 // - Vong xoay Nguyen Van Cu - Ly Thai To
+
+10.771538, 106.698437 // - Vong xoay Tran Hung Dao - cho Ben Thanh
+10.766880, 106.694294 // - Tran Hung Dao - De Tham
+10.768048, 106.695402 // - Tran Hung Dao - Nguyen Thai Hoc
+10.764810, 106.692474 // - Tran Hung Dao - Nguyen Cu Trinh
+10.763005, 106.690940 // - Tran Hung Dao - Cong Quynh
+10.761673, 106.689730 // - Tran Hung Dao - Tran Dinh Xu
+10.756456, 106.685256 // - Tran Hung Dao - Nguyen Van Cu
+10.755980, 106.683653 // - Tran Hung Dao - Nguyen Bieu
+10.754774, 106.678950 // - Tran Hung Dao - Le Hong Phong
+10.755400, 106.681411 // - Tran Hung Dao - Tran Binh Trong
+10.754186, 106.676886 // - Tran Hung Dao - Huynh Man Dat
+
+10.762183, 106.676458 // - Hung Vuong - Le Hong Phong
+10.763639, 106.678658 // - Hung Vuong - Tran Binh Trong
+10.761317, 106.675091 // - Hung Vuong - Tran Nhan Ton
+
+10.760513, 106.677030 // - Tran Phu - Le Hong Phong
+10.762619, 106.679048 // - Tran Phu - Tran Binh Trong
+10.758844, 106.675546 // - Tran Phu - Tran Nhan Ton (Huynh Man Dat)
+
+10.758133, 106.675759 // - An Duong Vuong - Huynh Man Dat
+10.759866, 106.680087 // - An Duong Vuong - Tran Binh Trong
+10.758917, 106.677609 // - An Duong Vuong - Le Hong Phong
+10.757557, 106.674079 // - Vong xoay An Duong Vuong - Tran Phu
+
+10.756382, 106.676232 // - Nguyen Trai - Huynh Man Dat
+10.757257, 106.678206 // - Nguyen Trai - Le Hong Phong
+10.758249, 106.680756 // - Nguyen Trai - Tran Binh Trong
+10.758910, 106.682612 // - Nguyen Trai - Nguyen Bieu
+10.762564, 106.686578 // - Nguyen Trai - Nguyen Cu Trinh
+10.763377, 106.687027 // - Nguyen Trai - Tran Dinh Xu
+10.766711, 106.688292 // - vong xoay Nguyen Trai - Cong Quynh
+10.768740, 106.689668 // - Nguyen Trai - Ton That Tung
+10.768011, 106.688921 // - Nguyen Trai - Luong Huu Khanh
+10.770455, 106.692012 // - Nguyen Trai - Nguyen Van Trang
+10.771319, 106.693223 // - Vong xoay Nguyen Trai - Ly Tu Trong (nga sau Phu Dong)
+10.767429, 106.688512 // - Nguyen Trai - Nam Quoc Cang
+10.768222, 106.689258 // - Nguyen Trai - Le Lai
+
+10.768425, 106.689921 // - Le Lai - Ton That Tung
+10.770157, 106.694171 // - Le Lai - Nguyen Thi Nghia
+10.769567, 106.692667 // - Le Lai - Nguyen Van Trang
+
+10.762918, 106.687695 // - Nguyen Cu Trinh - Tran Dinh Xu
+
+10.768370, 106.684584 // - Cong Quynh - NTMK
+10.767938, 106.685453 // - Cong Quynh - Pham Viet Chanh 
+10.767548, 106.686284 // - Cong Quynh - Bui Thi Xuan
+10.764175, 106.690722 // - Cong Quynh - Nguyen Cu Trinh
+
+10.767540, 106.690500 // - Pham Ngu Lao - Ton That Tung
+10.768649, 106.693284 // - Pham Ngu Lao - De Tham
+10.769228, 106.694730 // - Pham Ngu Lao - Nguyen Thai Hoc (Nguyen Thi Nghia)
+
+10.766094, 106.682290 // - NTMK - Nguyen Thien Thuat
+10.770049, 106.686126 // - NTMK - Luong Huu Khanh
+10.768192, 106.684250 // - NTMK - Cao Thang
+10.771259, 106.687200 // - NTMK - Ton That Tung 
+10.770404, 106.686399 // - NTMK - Nguyen Thuong Hien
+10.773654, 106.689452 // - NTMK - CMT8
+
+10.766359, 106.678715 // - Ly Thai To - Nguyen Dinh Chieu
+10.767703, 106.674414 // - vong xoay Ly Thai To - Dien Bien Phu
+
+10.770575, 106.676713 // - Dien Bien Phu - Nguyen Thien Thuat
+10.771895, 106.678059 // - Dien Bien Phu - Ban Co
+10.772711, 106.679060 // - Dien Bien Phu - Cao Thang
+10.775949, 106.682864 // - Dien Bien Phu - Nguyen Thuong Hien
+10.776691, 106.683692 // - Dien Bien Phu - CMT8
+
+10.767866, 106.680060 // - Nguyen Dinh Chieu - Nguyen Thien Thuat
+10.769103, 106.681220 // - Nguyen Dinh Chieu - Ban Co
+10.770048, 106.682098 // - Nguyen Dinh Chieu - Cao Thang
+10.772913, 106.684792 // - Nguyen Dinh Chieu - Nguyen Thuong Hien
+10.775019, 106.686805 // - Nguyen Dinh Chieu - CMT8
+
+10.772708, 106.691223 // - Bui Thi Xuan - CMT8
+10.770309, 106.688933 // - bui Thi Xuan - Le Thi Rieng
+10.769999, 106.688611 // - Bui Thi Xuan - Ton That Tung
+10.768815, 106.687459 // - Bui Thi Xuan - Luong Huu Khanh
+10.768350, 106.687021 // - Bui Thi Xuan - Nam Quoc Cang
+
+10.774261, 106.688209 // - Vo Van Tan - CMT8
+10.771569, 106.685651 // - Vo Van Tan - Nguyen Thuong Hien
+10.769047, 106.683265 // - Vo Van Tan - Cao Thang
+
+10.771319, 106.691549 // - Nguyen Van Trang - Le Thi Rieng
