@@ -1,40 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <title>Calculator</title>
-  </head>
-  <body >
+    <style>
+        .label {
+            display: inline-block
+        }
+        
+        #name1,
+        #name2 {
+            display: inline-block
+        }
+    </style>
+</head>
+
+<body>
     <div>
         <div style="width: 50%; display: inline-block; position: fixed">
-            <br/><br/>
-            A Point: 
-            <input type="text" id="latLngA" style="width: 150px;height: 25px;"/><br/><br/>
-
-            B Point: 
-            <input type="text" id="latLngB" style="width: 150px;height: 25px;"/><br/><br/>
+            <br/><br/> A Point:
+            <input type="text" id="latLngA" style="width: 150px;height: 25px;" />
+            <div id="name1"></div><br/><br/> B Point:
+            <input type="text" id="latLngB" style="width: 150px;height: 25px;" />
+            <div id="name2"></div><br/><br/>
 
             <button id="calc">Calculator</button><br/><br/>
 
             <div>
-                Result (Meter): <p id="result" style="color: red"></p>
+                Result (Meter):
+                <p id="result" style="color: red"></p>
             </div>
         </div>
-
         <div style="width: 50%; float: right" id="coordinate">
-            
+
         </div>
     </div>
 
     <script src="coordinations_2.js"></script>
     <script>
-        function init() {
-            var a_point = document.getElementById("latLngA");
-            var b_point = document.getElementById("latLngB");
-            var calc = document.getElementById("calc");
-            var result = document.getElementById("result");
+        var a_point = document.getElementById("latLngA");
+        var b_point = document.getElementById("latLngB");
+        var calc = document.getElementById("calc");
+        var result = document.getElementById("result");
+        var name1 = document.getElementById("name1");
+        var name2 = document.getElementById("name2");
 
+        function init() {
             calc.addEventListener("click", function() {
                 var latA = Number(a_point.value.split(", ")[0]);
                 var lngA = Number(a_point.value.split(", ")[1]);
@@ -42,32 +55,65 @@
                 var lngB = Number(b_point.value.split(", ")[1]);
 
                 result.innerHTML = google.maps.geometry.spherical.computeDistanceBetween(
-                        new google.maps.LatLng(latA, lngA), 
-                        new google.maps.LatLng(latB, lngB)
-                    );
+                    new google.maps.LatLng(latA, lngA),
+                    new google.maps.LatLng(latB, lngB)
+                );
             });
 
             // show list coordinate
             var coordinate = document.getElementById("coordinate");
             var firstStrName = "";
-            for(var item = 0; item < coordinates_2.length; ++item) {
+            for (var item = 0; item < coordinates_2.length; ++item) {
                 var str = "";
                 var strName = coordinates_2[item].name.split(" - ");
 
-                if(strName[0] != firstStrName)
+                if (strName[0] != firstStrName)
                     str = '<br />';
-                
+
                 coordinate.insertAdjacentHTML('beforeend', str);
-                
-                str = '<p>' + coordinates_2[item].lat + ', ' + coordinates_2[item].lng + '  --- ' + coordinates_2[item].name +'</p>';
+
+                str = '<div>';
+                str += '<p class="label">' + coordinates_2[item].lat + ', ' + coordinates_2[item].lng + '  --- ' + coordinates_2[item].name + '</p> ';
+                str += '<button class="copy1" id="copy1_' +
+                    item +
+                    '" data-coordinate="' +
+                    coordinates_2[item].lat + ', ' + coordinates_2[item].lng +
+                    '" data-name="' + coordinates_2[item].name + '">Copy 1</button> ';
+
+                str += '<button class="copy2" id="copy2_' +
+                    item +
+                    '" data-coordinate="' +
+                    coordinates_2[item].lat + ', ' + coordinates_2[item].lng +
+                    '" data-name="' + coordinates_2[item].name + '">Copy 2</button> ';
+
+                str += '</div>';
                 firstStrName = strName[0];
 
                 coordinate.insertAdjacentHTML('beforeend', str);
+
+                copy('copy1_' + item, 'copy2_' + item, a_point, b_point);
             }
+
+        }
+
+        function copy(id1, id2, a_point, b_point) {
+            var copy1 = document.getElementById(id1);
+            var copy2 = document.getElementById(id2);
+            copy1.addEventListener('click', function() {
+                a_point.value = copy1.getAttribute("data-coordinate");
+                name1.innerText = copy1.getAttribute("data-name");
+                result.innerHTML = "";
+            });
+
+            copy2.addEventListener('click', function() {
+                b_point.value = copy2.getAttribute("data-coordinate");
+                name2.innerText = copy2.getAttribute("data-name");
+                result.innerHTML = "";
+            });
         }
     </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCM0P36UmPLXXbSjRgGL3rAeJSCdfH_JA&libraries=geometry&callback=init">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCM0P36UmPLXXbSjRgGL3rAeJSCdfH_JA&libraries=geometry&callback=init">
     </script>
-  </body>
+</body>
+
 </html>
