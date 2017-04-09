@@ -9,7 +9,7 @@ function findShortestPath(start, end) {
 
     while (true) {
         var current = Object.assign({}, nodePending[0]);
-        console.log(current.name + " (" + current.lat + ", " + current.lng + ")");
+        // console.log(current.name + " (" + current.lat + ", " + current.lng + ")");
         if(current.lat === end.lat && current.lng === end.lng)
             break;
 
@@ -17,6 +17,14 @@ function findShortestPath(start, end) {
         
         for(var i = 0; i < current.adjacentCoordinates.length; ++i) {
             var temp = findPoint(current.adjacentCoordinates[i], data);
+            var duplicate = findPoint(temp, nodePending);
+            if(duplicate.lat && duplicate.lng)
+                continue;
+
+            duplicate = findPoint(temp, result);
+            if(duplicate.lat && duplicate.lng)
+                continue;
+
             temp.prevNode = { lat: current.lat, lng: current.lng };
             temp.distancePrevNode = current.distancePrevNode + current.adjacentCoordinates[i].distance;
             temp.heuristic = temp.distancePrevNode + getHeuristic(temp, end);

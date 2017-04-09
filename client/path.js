@@ -307,5 +307,9 @@ var path = [
     [
         { lat: 10.770874, lng: 106.691680 },
         { lat: 10.769567, lng: 106.692667 }, // - Le Lai - Nguyen Van Trang
+    ],
+    [
+        { lat: 10.758910, lng: 106.682612 }, // - Nguyen Trai - Nguyen Bieu
+        { lat: 10.755980, lng: 106.683653 }, // - Tran Hung Dao - Nguyen Bieu
     ]
 ];

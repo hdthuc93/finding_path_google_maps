@@ -27,12 +27,13 @@ function initMap() {
             map: map,
         });
     }
+}
 
-
+function run() {
     var start = {
         name: "Vong xoay Nguyen Trai - Cong Quynh",
         lat: 10.766711,
-        lng: 106.687027,
+        lng: 106.688292,
         adjacentCoordinates: [
             {
                 // Nguyen Trai - Tran Dinh Xu
@@ -81,8 +82,8 @@ function initMap() {
 
     var printNode = result[result.length - 1];
 
-    // while(printNode.lat !== start.lat && printNode.lng !== start.lng) {
-    //     console.log(printNode.name + " (" + printNode.lat + ", " + printNode.lng + ")");
-    //     printNode = findPoint(printNode.prevNode, result);
-    // }
+    while(printNode.lat !== start.lat && printNode.lng !== start.lng) {
+        console.log(printNode.name + " (" + printNode.lat + ", " + printNode.lng + ")");
+        printNode = findPoint(printNode.prevNode, result);
+    }
 }
