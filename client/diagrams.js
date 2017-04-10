@@ -31,51 +31,53 @@ function initMap() {
 
 function run() {
     var start = {
-        name: "Vong xoay Nguyen Trai - Cong Quynh",
-        lat: 10.766711,
-        lng: 106.688292,
+        name: "Nguyen Dinh Chieu - Ban Co",
+        lat: 10.769103,
+        lng: 106.68122,
         adjacentCoordinates: [
             {
-                // Nguyen Trai - Tran Dinh Xu
-                lat: 10.763377,
-                lng: 106.687027,
-                distance: 396.08396424750424
-            }, {
-                // Cong Quynh - Nguyen Cu Trinh
-                lat: 10.764175,
-                lng: 106.690722,
-                distance: 387.70796214719763
-            }, {
-                // Nguyen Trai - Nam Quoc Cang
-                lat: 10.767429,
-                lng: 106.688512,
-                distance: 83.46993569614955
-            }, {
-                // Cong Quynh - Bui Thi Xuan
-                lat: 10.767548,
-                lng: 106.686284,
-                distance: 238.5436808556501
-            }
-        ]
+                // Nguyen Dinh Chieu - Nguyen Thien Thuat
+                lat: 10.767866,
+                lng: 106.68006,
+                distance: 187.22848642508166
+            },
+            {
+                // Nguyen Dinh Chieu - Cao Thang 
+                lat: 10.770048,
+                lng: 106.682098,
+                distance: 142.42772657501956
+            },
+            {
+                // Dien Bien Phu - Ban Co
+                lat: 10.771895,
+                lng: 106.678059,
+                distance: 464.86041746977935
+            }]
     };
 
     var end = {
-        name: "Vong xoay An Duong Vuong - Tran Phu",
-        lat: 10.757557,
-        lng: 106.674079,
+        name: "Nguyen Dinh Chieu - Nguyen Thuong Hien",
+        lat: 10.772913,
+        lng: 106.684792,
         adjacentCoordinates: [
             {
-                // An Duong Vuong - Huynh Man Dat
-                lat: 10.758133,
-                lng: 106.675759,
-                distance: 194.59715544253766
-            }, {
-                // Tran Phu - Tran Nhan Ton (Huynh Man Dat)
-                lat: 10.758844,
-                lng: 106.675546,
-                distance: 215.09366433238793
-            }
-        ]
+                // Nguyen Dinh Chieu - CMT8
+                lat: 10.775019,
+                lng: 106.686805,
+                distance: 321.59203366312806
+            },
+            {
+                // Dien Bien Phu - Nguyen Thuong Hien
+                lat: 10.775949,
+                lng: 106.682864,
+                distance: 398.33985703208776
+            },
+            {
+                // Vo Van Tan - Nguyen Thuong Hien
+                lat: 10.771569,
+                lng: 106.685651,
+                distance: 176.65951249971653
+            }]
     };
 
     var result = findShortestPath(start, end);

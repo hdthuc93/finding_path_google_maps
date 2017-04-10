@@ -1491,12 +1491,6 @@ var data = [
         lng: 106.679060,
         adjacentCoordinates: [
             {
-                // Dien Bien Phu - Ban Co
-                lat: 10.771895,
-                lng: 106.678059,
-                distance: 142.24754026152237
-            },
-            {
                 // Dien Bien Phu - Nguyen Thuong Hien
                 lat: 10.775949,
                 lng: 106.682864,
@@ -1526,12 +1520,6 @@ var data = [
                 lat: 10.776691,
                 lng: 106.683692,
                 distance: 122.56170478771854
-            },
-            {
-                // Dien Bien Phu - Cao Thang
-                lat: 10.772711,
-                lng: 106.67906,
-                distance: 550.4336523802895
             }]
     },
     {
@@ -1545,12 +1533,6 @@ var data = [
                 lat: 10.775019,
                 lng: 106.686805,
                 distance: 387.9862724070609
-            },
-            {
-                // Dien Bien Phu - Nguyen Thuong Hien 
-                lat: 10.775949,
-                lng: 106.682864,
-                distance: 122.56170478771854
             }]
     },
     {
@@ -1622,12 +1604,6 @@ var data = [
                 distance: 445.25912236475097
             },
             {
-                // Nguyen Dinh Chieu - Nguyen Thuong Hien
-                lat: 10.772913,
-                lng: 106.684792,
-                distance: 434.1797061198464
-            },
-            {
                 // Nguyen Dinh Chieu - Ban Co
                 lat: 10.769103,
                 lng: 106.68122,
@@ -1646,12 +1622,6 @@ var data = [
         lat: 10.772913,
         lng: 106.684792,
         adjacentCoordinates: [
-            {
-                // Nguyen Dinh Chieu - CMT8
-                lat: 10.775019,
-                lng: 106.686805,
-                distance: 321.59203366312806
-            },
             {
                 // Dien Bien Phu - Nguyen Thuong Hien
                 lat: 10.775949,
