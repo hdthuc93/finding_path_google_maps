@@ -65,9 +65,7 @@
 </head>
 
 <body>
-    <input id="origin-input" class="controls" type="text" placeholder="Enter an origin location">
-
-    <input id="destination-input" class="controls" type="text" placeholder="Enter a destination location">
+    <input id="origin-input" class="controls" type="button">
 
     <div id="mode-selector" class="controls" style="display: none">
         <input type="radio" name="type" id="changemode-driving">
@@ -77,10 +75,9 @@
     <div id="map"></div>
 
     <!-- Javascript files -->
-    <script src="index.js">
+    <script src="js/index.js">
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCM0P36UmPLXXbSjRgGL3rAeJSCdfH_JA&libraries=places&callback=initMap" async defer>
-        console.log("load google API")
     </script>
 </body>
 

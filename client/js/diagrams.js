@@ -81,11 +81,19 @@ function run() {
     };
 
     var result = findShortestPath(start, end);
-
     var printNode = result[result.length - 1];
+    var path = [];
+    path.push(end);
 
     while(printNode.lat !== start.lat && printNode.lng !== start.lng) {
-        console.log(printNode.name + " (" + printNode.lat + ", " + printNode.lng + ")");
+        path.push(printNode);
         printNode = findPoint(printNode.prevNode, result);
+    }
+    
+    path.push(start);
+    path.reverse();
+
+    for(var i = 0; i < path.length; ++i) {
+        console.log(path[i].name + " (" + path[i].lat + ", " + path[i].lng + ")");
     }
 }
