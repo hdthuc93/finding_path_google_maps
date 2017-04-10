@@ -31,52 +31,52 @@ function initMap() {
 
 function run() {
     var start = {
-        name: "Nguyen Dinh Chieu - Ban Co",
-        lat: 10.769103,
-        lng: 106.68122,
+        name: "Dien Bien Phu - Nguyen Thuong Hien",
+        lat: 10.775949,
+        lng: 106.682864,
         adjacentCoordinates: [
             {
-                // Nguyen Dinh Chieu - Nguyen Thien Thuat
-                lat: 10.767866,
-                lng: 106.68006,
-                distance: 187.22848642508166
+                // Nguyen Dinh Chieu - Nguyen Thuong Hien
+                lat: 10.772913,
+                lng: 106.684792,
+                distance: 398.33985703208776
             },
             {
-                // Nguyen Dinh Chieu - Cao Thang 
-                lat: 10.770048,
-                lng: 106.682098,
-                distance: 142.42772657501956
-            },
-            {
-                // Dien Bien Phu - Ban Co
-                lat: 10.771895,
-                lng: 106.678059,
-                distance: 464.86041746977935
+                // Dien Bien Phu - CMT8
+                lat: 10.776691,
+                lng: 106.683692,
+                distance: 122.56170478771854
             }]
     };
 
     var end = {
-        name: "Nguyen Dinh Chieu - Nguyen Thuong Hien",
-        lat: 10.772913,
-        lng: 106.684792,
+        name: "Nguyen Trai - Tran Binh Trong",
+        lat: 10.758249,
+        lng: 106.680756,
         adjacentCoordinates: [
             {
-                // Nguyen Dinh Chieu - CMT8
-                lat: 10.775019,
-                lng: 106.686805,
-                distance: 321.59203366312806
+                // An Duong Vuong - Tran Binh Trong
+                lat: 10.759866,
+                lng: 106.680087,
+                distance: 194.30442810102633
             },
             {
-                // Dien Bien Phu - Nguyen Thuong Hien
-                lat: 10.775949,
-                lng: 106.682864,
-                distance: 398.33985703208776
+                // Nguyen Trai - Nguyen Bieu
+                lat: 10.758910,
+                lng: 106.682612,
+                distance: 215.9030353723206
             },
             {
-                // Vo Van Tan - Nguyen Thuong Hien
-                lat: 10.771569,
-                lng: 106.685651,
-                distance: 176.65951249971653
+                // Nguyen Trai - Le Hong Phong
+                lat: 10.757257,
+                lng: 106.678206,
+                distance: 299.9437840620149
+            },
+            {
+                // Tran Hung Dao - Tran Binh Trong
+                lat: 10.755400,
+                lng: 106.681411,
+                distance: 325.1383160505475
             }]
     };
 

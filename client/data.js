@@ -1848,7 +1848,7 @@ var data = [
             },
             {
                 // NTMK - Nguyen Thuong Hien
-                lat: 10.7704049,
+                lat: 10.770404,
                 lng: 106.686399,
                 distance: 153.32973853857925
             },
