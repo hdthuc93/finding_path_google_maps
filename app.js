@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
     res.sendFile(__dirname + '/client/index.html');
 });
 
-router.get('/diagrams', (req, res) => {
+router.get('/maps', (req, res) => {
     res.sendFile(__dirname + '/client/diagrams.html');
 });
 
