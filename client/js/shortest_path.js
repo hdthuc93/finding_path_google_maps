@@ -1,15 +1,19 @@
-
+/**
+ * A function will calculate what is the best path from A to B with heuristic = skyway
+ * @param {Object} start 
+ * @param {Object} end 
+ */
 function findShortestPath(start, end) {
     var nodePending = [];
     var result = [];
-    // nodePending.splice(nodePending.length, 0, start);
+    
     start.heuristic = 0;
     start.distancePrevNode = 0;
     nodePending.push(start);
 
     while (true) {
         var current = Object.assign({}, nodePending[0]);
-        // console.log(current.name + " (" + current.lat + ", " + current.lng + ")");
+        
         if(current.lat === end.lat && current.lng === end.lng)
             break;
 
@@ -18,6 +22,8 @@ function findShortestPath(start, end) {
         
         for(var i = 0; i < current.adjacentCoordinates.length; ++i) {
             var temp = findPoint(current.adjacentCoordinates[i], data);
+
+            // Get index in result array, if exist node in it then ignore node
             var index = getIndexFromArray(temp, result);
 
             if(index > -1)
@@ -28,6 +34,8 @@ function findShortestPath(start, end) {
             temp.heuristic = getHeuristic(temp, end);
             temp.f = temp.distancePrevNode + temp.heuristic;
 
+            // Get index in nodePending array
+            // If exist node, check distance. If temp node better than (it's mean shorter) node in nodePending, replace it
             index = getIndexFromArray(temp, nodePending);
             if(index > -1) {
                 if(temp.distancePrevNode < nodePending[index].distancePrevNode) {
@@ -38,6 +46,7 @@ function findShortestPath(start, end) {
 
             nodePending.push(temp);
         }
+        // nodePending sort by ascending f (f = distance + heuristic)
         nodePending.sort(function(first, last) { return first.f - last.f });
     }
     return result;
@@ -57,13 +66,22 @@ function findPoint(point, arr) {
     return result;
 }
 
+/**
+ * 
+ * @param {Object} point 
+ * @param {Array} arr 
+ */
 function getIndexFromArray(point, arr) {
     return arr.findIndex(function(element) {
         return ( element.lat === point.lat && element.lng === point.lng );    
     });
 }
 
-
+/**
+ * Get distance follow skyway
+ * @param {Object} point 
+ * @param {Object} endPoint 
+ */
 function getHeuristic(point, endPoint) {
     return google.maps.geometry.spherical.computeDistanceBetween(
         new google.maps.LatLng(point.lat, point.lng),

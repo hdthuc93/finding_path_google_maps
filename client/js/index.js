@@ -27,14 +27,22 @@ function initMap() {
     };
 }
 
-
+// Event listener on button "Searching driver near me"
 btnFind.addEventListener('click', function() {
     for(var i = 0; i < drivers.length; ++i) {
+        // A star algorithm detect from A to B and B is an array, so need for loop 
         findDriver(drivers[i], destination, drawPathInMap);
     }
 });
 
+/**
+ * Find driver function will call findShortestPath function, receive results and show it on the map through callback function 
+ * @param {Object} start 
+ * @param {Object} end 
+ * @param {Function} callback 
+ */
 function findDriver(start, end, callback) {
+    // findShortestPath function at "./shortest_path.js" file
     var result = findShortestPath(start, end);
     var printNode = result[result.length - 1];
     console.log("distance: ", printNode.distancePrevNode);
@@ -95,6 +103,7 @@ function showAnimate(resPath, start, to) {
 function animate(line, resPath, to) {
     var count = 0;
     var myVar = window.setInterval(function() {
+        // Stop condition, do not want repeat animate
         if(count === 199) {
             clearInterval(myVar);
             line.set('icons', undefined);
