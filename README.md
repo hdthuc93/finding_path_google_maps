@@ -11,6 +11,7 @@
 3. Calculate distance page: [http://localhost:3000/calc](http://localhost:3000/calc)
 
 ### Note
-- Not necessary run server Node, all page are static HTML pages.
-- Map data : "/client/data/data.js".
+- Not necessary run server Node, all pages are static HTML pages.
+- Map data: "/client/data/data.js".
+- A star algorithm: "/client/js/shortest_path.js"
 - Drivers and destination nodes: "/client/data/nodes_demo.js".
